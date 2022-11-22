@@ -1,6 +1,6 @@
-import 'package:first_app/presentation/views/Home_Screen.dart';
 import 'package:first_app/presentation/views/widgets/CustomBoutton.dart';
 import 'package:first_app/presentation/views/widgets/custom_text_field.dart';
+import 'package:first_app/presentation/widgets/bottom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -111,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       //print("confirm");
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
-                              const HomeScreen()));
+                              const BottomScreen()));
                     },
                   ),
                 ]),

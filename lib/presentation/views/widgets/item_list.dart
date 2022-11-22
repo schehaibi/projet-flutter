@@ -32,7 +32,7 @@ class ItemList extends StatelessWidget {
                 Column(
                   children: [
                     CircleAvatar(
-                        foregroundImage: AssetImage(
+                        foregroundImage: NetworkImage(
                             post.avatarImage ?? "assets/background.jpg")),
                     Text(post.name ?? "yio")
                   ],

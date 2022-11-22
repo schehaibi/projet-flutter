@@ -13,4 +13,14 @@ class Post {
       this.isliked,
       this.avatarImage,
       this.name});
+  factory Post.fromJson(Map<String, dynamic> json) {
+    return Post(
+      title: json['title'] ?? "",
+      image: json['image'],
+      description: json['description'],
+      isliked: json['isLiked'],
+      avatarImage: json['avatarImage'],
+      name: json['name'],
+    );
+  }
 }
